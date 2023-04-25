@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <ul>
+                <li>First <span class="glyphicon glyphicon-question-sign append text-info tip" data-tip="tip-first" ></span></li>
+                <li>Second <span class="glyphicon glyphicon-question-sign append text-info tip" data-tip="tip-second" ></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Tips content -->
+<div id="tip-first" class="tip-content hidden">
+    <h2>My first tip</h2>
+    <p>This is my first tip gggfgfffgfgfgfgfgfgfgcontent</p>
+</div>
+<div id="tip-second" class="tip-content hidden">
+    <h2>My second tip</h2>
+    <p>This is my second tip content</p>
+</div>
+<p class="text-center text-muted small">Hey, why not make a 5mn break and have a look at this awesome <a href="https://www.slider-maker.com/">jQuery slideshow maker</a>?</p>
+
+
+
+
+
+
+<script type="text/javascript">
+    // Tooltips
+$('.tip').each(function () {
+    $(this).tooltip(
+    {
+        html: true,
+        title: $('#' + $(this).data('tip')).html()
+    });
+});
+
+</script>
+</body>
+
+</html>
