@@ -582,8 +582,8 @@ if(isset($_POST['btnaprod']) && ($_POST['btnaprod'] != "") && isset($_POST['txts
 										<div class="col-sm-9">
 											<?php
 											while ($rowsprdft_mst = mysqli_fetch_array($srsprdft_mst)) { ?>
-												<input name="ckhprdft[]" type="checkbox" id="ckhprdft" value="<?php echo $rowsprdft_mst["prodfetrm_id"]; ?>">&nbsp;<?php echo $rowsprdft_mst["prodfetrm_name"]; ?>
-												<span id="errorsDiv_ckhprdft"></span>
+												<input name="chkprdft[]" type="checkbox" id="chkprdft" value="<?php echo $rowsprdft_mst["prodfetrm_id"]; ?>">&nbsp;<?php echo $rowsprdft_mst["prodfetrm_name"]; ?>
+												<span id="errorsDiv_chkprdft"></span>
 												<?php
 											}
 											?>
